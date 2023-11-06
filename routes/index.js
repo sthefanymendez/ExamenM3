@@ -6,10 +6,8 @@ const router = express.Router();
 module.exports = router;
 
 const models = require('../models/model');
-
 // escriban sus rutas acá
 // siéntanse libres de dividir entre archivos si lo necesitan
-
 router.get('/categories', (require, resolve) => {
   resolve.json(models.listCategories());
 });
